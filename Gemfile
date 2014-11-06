@@ -47,7 +47,7 @@ gem 'tzinfo-data'
 gem 'fullcalendar-rails'
 gem 'fullcalendar_engine'
 
-ruby "1.9.3"
+#ruby "1.9.3"
 
 group :development do
   gem 'sqlite3'
