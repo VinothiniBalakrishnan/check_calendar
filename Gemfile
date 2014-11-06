@@ -58,3 +58,16 @@ group :production do
   gem 'rails_12factor'
 end
 
+group :test, :development do
+  # These are the target gems of sauce tutorial
+  gem 'rspec-rails', '~> 2.12'
+  #gem 'sauce', '~> 3.1.1'
+  gem "sauce", :git => 'git://github.com/saucelabs/sauce_ruby.git', :branch => 'update_parallel'
+  gem 'sauce-connect'
+  gem 'capybara', '~> 2.0.3'
+  gem 'parallel_tests'
+end
+
+gem 'rack-cors', :require => 'rack/cors'
+
+gem 'ci_reporter_rspec'
