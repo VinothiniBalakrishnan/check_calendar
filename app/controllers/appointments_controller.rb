@@ -64,6 +64,11 @@ class AppointmentsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def clinics
+	clinics = [{name: "Surya hospitol", address: "vadapalani"},{name: "Surya hospitol", address: "vadapalani"},{name: "Surya hospitol", address: "vadapalani"},{name: "Surya hospitol", address: "vadapalani"}]
+    render json: {lineItems: clinics }
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
