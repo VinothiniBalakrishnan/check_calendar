@@ -67,7 +67,7 @@ class AppointmentsController < ApplicationController
   
   def clinics
 	clinics = [{name: "Surya hospitol", address: "vadapalani"},{name: "Surya hospitol", address: "vadapalani"},{name: "Surya hospitol", address: "vadapalani"},{name: "Surya hospitol", address: "vadapalani"}]
-    render json: {lineItems: clinics }
+    render json: {clinics: clinics }
   end
 
   private
