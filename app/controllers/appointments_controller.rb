@@ -67,7 +67,7 @@ class AppointmentsController < ApplicationController
   
   def clinics
 	clinics = []
-	 (1..1000).each do |i|
+	 (1..300).each do |i|
 	 	clinics << [{name: "Surya hospitol", address: "vadapalani"},{name: "VHM hospitol", address: "vadapalani"},{name: "Apollo hospitol", address: "vadapalani"},{name: "Guruswamy hospitol", address: "vadapalani"}]
 	 end
     render json: {clinics: clinics.flatten }
