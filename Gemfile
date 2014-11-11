@@ -54,7 +54,7 @@ group :development do
 end
 
 group :production do
-  #gem 'pg'
+  gem 'pg'
   gem 'rails_12factor'
 end
 
@@ -71,3 +71,4 @@ end
 gem 'rack-cors', :require => 'rack/cors'
 
 gem 'ci_reporter_rspec'
+gem 'thin'
