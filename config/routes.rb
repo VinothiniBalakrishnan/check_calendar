@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :doctors
+
   resources :appointments
   get 'clinics' => 'appointments#clinics'
 
