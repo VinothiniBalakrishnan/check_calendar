@@ -72,3 +72,4 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'ci_reporter_rspec'
 gem 'thin'
+gem 'kaminari'
