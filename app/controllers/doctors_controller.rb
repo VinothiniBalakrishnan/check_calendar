@@ -4,6 +4,7 @@ class DoctorsController < ApplicationController
   # GET /doctors
   # GET /doctors.json
   def index
+	# List doctors
     @doctors = Doctor.all.limit(5).offset(params[:page])
 	render json: {doctors: @doctors.flatten }
   end
