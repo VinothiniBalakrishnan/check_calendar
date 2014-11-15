@@ -68,7 +68,7 @@ class AppointmentsController < ApplicationController
   def clinics
 	clinics = []
 	 (1..10).each_with_index do |i, index|
-	 	clinics << [{id: index + 1, name: "Surya hospitol", address: "vadapalani"}]
+	 	clinics << [{id: index + 1, name: "Surya hospital", address: "vadapalani"}]
 	 end
     render json: {clinics: clinics.flatten }
   end
